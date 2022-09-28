@@ -20,7 +20,7 @@
       "@commons/*": ["commons/*"],
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
