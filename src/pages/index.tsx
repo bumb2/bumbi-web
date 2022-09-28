@@ -1,7 +1,13 @@
 import type { NextPage } from 'next';
 
+import HeadMeta from '@commons/HeadMeta';
+
 const Home: NextPage = () => {
-  return <div></div>;
+  return (
+    <>
+      <HeadMeta />
+    </>
+  );
 };
 
 export default Home;
