@@ -37,7 +37,7 @@ interface TextProps {
 /**
  * 기본 텍스트
  */
-const Text = styled.Text<TextProps>`
+const Text = styled.div<TextProps>`
   font-size: ${({ size, theme }) => (theme.fontSizes[size] ? theme.fontSizes[size] : size)};
   color: ${({ color, theme }) => (color ? `${theme.colors[color]}` : 'black')};
   font-weight: ${ifProp('bold', 'bold', 'normal')};
@@ -45,7 +45,7 @@ const Text = styled.Text<TextProps>`
   text-align: ${({ textAlign }) => (textAlign ? textAlign : 'left')};
   text-decoration: ${({ underline, theme, color }) => (underline ? `underline ${color ? theme.colors[color] : 'black'}` : 'none')};
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
-  font-family: ${({ font }) => (font ? font : Fonts.NotoSans_Regular)};
+  font-family: ${({ font }) => (font ? font : Fonts.G마켓Sans_Medium)};
 `;
 
 export default Text;
