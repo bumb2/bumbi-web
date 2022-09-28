@@ -1,26 +1,17 @@
 import styled from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import Fonts from '../../common/Fonts';
+import Fonts from '@commons/Fonts';
 
 interface TextProps {
   /**
-   * 10, 12, 14, 16, 18px, 20px, 24px 크기 지정
+   * 10, 12, 14, 16, 18px, 20px, 24px, 34px 크기 지정
    */
-  size: 'xxxsmall' | 'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string;
+  size: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge' | string;
   /**
    * 색 지정
    */
-  color?:
-  | 'primary'
-  | 'secondary'
-  | 'warning'
-  | 'white'
-  | 'brightGray'
-  | 'lightGray'
-  | 'middleGray'
-  | 'darkGray'
-  | 'black';
+  color?: 'green' | 'purple' | 'yellow' | 'red' | 'black' | 'white' | 'transparent';
   /**
    * 글씨 굵게
    */
@@ -52,8 +43,7 @@ const Text = styled.Text<TextProps>`
   font-weight: ${ifProp('bold', 'bold', 'normal')};
   align-self: ${ifProp('centered', 'center', 'auto')};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : 'left')};
-  text-decoration: ${({ underline, theme, color }) =>
-    underline ? `underline ${color ? theme.colors[color] : 'black'}` : 'none'};
+  text-decoration: ${({ underline, theme, color }) => (underline ? `underline ${color ? theme.colors[color] : 'black'}` : 'none')};
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   font-family: ${({ font }) => (font ? font : Fonts.NotoSans_Regular)};
 `;
