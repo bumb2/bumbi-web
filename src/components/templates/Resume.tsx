@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 import Cover from '@components/organisms/Cover';
 import About from '@components/organisms/About';
+import Experience from '@components/organisms/Experience';
 
 const Resume = () => {
   return (
     <Wrapper>
       <Cover />
       <About />
+      <Experience />
     </Wrapper>
   );
 };

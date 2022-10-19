@@ -13,7 +13,7 @@ interface TextProps {
   /**
    * 색 지정
    */
-  color?: 'green' | 'purple' | 'yellow' | 'red' | 'black' | 'white' | 'transparent';
+  color?: 'green' | 'purple' | 'yellow' | 'red' | 'gray' | 'black' | 'white' | 'transparent';
   /**
    * 글씨 굵게
    */

@@ -14,11 +14,11 @@ const Cover = () => {
       <Container>
         <Image src={Images.BUMBI_INSPIRED} alt="bumbi" quality={100} layout="responsive" objectFit="contain" />
       </Container>
-      <Box height="2vw" />
-      <Text color="purple" size="4vw" font={Fonts.SUIT_Heavy}>
+      <Box height="1vw" />
+      <Text color="purple" size="3.5vw" font={Fonts.SUIT_Heavy}>
         About me
       </Text>
-      <Box height="6vw" />
+      <Box height="4vw" />
       <Box width="auto" justifyContent="center" alignItems="center">
         <TextWrapper>
           <Content>도전과 변화를 좋아하는 유연한 개발자</Content>
@@ -41,25 +41,27 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10vw;
+  margin-bottom: 20vw;
 `;
 
 const Container = styled.span`
-  width: 16vw;
+  width: 14vw;
 `;
 
 const TextWrapper = styled.span`
   background-color: ${Theme.colors.yellow};
   padding: 0 5px;
-  height: 3vw;
+  height: 2.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const Content = styled(Text).attrs(() => ({
-  size: '2vw',
+  size: '1.5vw',
 }))`
-  height: 4vw;
+  height: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
