@@ -1,3 +1,3 @@
 export default {
-  THUMBNAIL: require('@assets/images/thumbnail.png'),
+  BUMBI_INSPIRED: require('@assets/Images/bumbi-inspired.png'),
 };

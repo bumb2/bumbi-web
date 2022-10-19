@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { ifProp } from 'styled-tools';
 
+import Theme from '@commons/Theme';
+
 import Fonts from '@commons/Fonts';
 
 interface TextProps {
@@ -45,7 +47,7 @@ const Text = styled.div<TextProps>`
   text-align: ${({ textAlign }) => (textAlign ? textAlign : 'left')};
   text-decoration: ${({ underline, theme, color }) => (underline ? `underline ${color ? theme.colors[color] : 'black'}` : 'none')};
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
-  font-family: ${({ font }) => (font ? font : Fonts.G마켓Sans_Medium)};
+  font-family: ${({ font }) => (font ? font : Fonts.SUIT_Medium)};
 `;
 
 export default Text;

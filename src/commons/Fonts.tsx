@@ -1,5 +1,11 @@
 export default {
-  G마켓Sans_Bold: 'GmarketSansBold',
-  G마켓Sans_Light: 'GmarketSansLight',
-  G마켓Sans_Medium: 'GmarketSansMedium',
+  SUIT_Bold: 'SUIT-Bold',
+  SUIT_ExtraBold: 'SUIT_ExtraBold',
+  SUIT_ExtraLight: 'SUIT-ExtraLight',
+  SUIT_Heavy: 'SUIT-Heavy',
+  SUIT_Light: 'SUIT-Light',
+  SUIT_Medium: 'SUIT-Medium',
+  SUIT_Regular: 'SUIT-Regular',
+  SUIT_SemiBold: 'SUIT-SemiBold',
+  SUIT_Thin: 'SUIT-SUIT-Thin',
 };
