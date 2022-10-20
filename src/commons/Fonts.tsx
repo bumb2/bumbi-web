@@ -7,5 +7,5 @@ export default {
   SUIT_Medium: 'SUIT-Medium',
   SUIT_Regular: 'SUIT-Regular',
   SUIT_SemiBold: 'SUIT-SemiBold',
-  SUIT_Thin: 'SUIT-SUIT-Thin',
+  SUIT_Thin: 'SUIT-Thin',
 };

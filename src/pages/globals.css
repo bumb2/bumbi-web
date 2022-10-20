@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: "SUIT-Heavy";
+  src: url("../../public/fonts/SUIT-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SUIT-ExtraBold";
+  src: url("../../public/fonts/SUIT-ExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "SUIT-Bold";
+  src: url("../../public/fonts/SUIT-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SUIT-SemiBold";
+  src: url("../../public/fonts/SUIT-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SUIT-Medium";
+  src: url("../../public/fonts/SUIT-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("../../public/fonts/SUIT-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SUIT-Light";
+  src: url("../../public/fonts/SUIT-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "SUIT-ExtraLight";
+  src: url("../../public/fonts/SUIT-ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SUIT-Thin";
+  src: url("../../public/fonts/SUIT-Thin.otf") format("opentype");
+}
