@@ -5,6 +5,7 @@ import About from '@components/organisms/About';
 import Experience from '@components/organisms/Experience';
 import Activity from '@components/organisms/Activity';
 import Skills from '@components/organisms/Skills';
+import Education from '@components/organisms/Education';
 
 const Resume = () => {
   return (
@@ -14,6 +15,7 @@ const Resume = () => {
       <Experience />
       <Activity />
       <Skills />
+      <Education />
     </Wrapper>
   );
 };

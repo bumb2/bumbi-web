@@ -61,6 +61,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vw;
 `;
 
 const LeftContainer = styled.div`
@@ -90,6 +91,7 @@ const Date = styled(Text).attrs(() => ({
   color: 'gray',
 }))`
   margin-bottom: 4vw;
+  margin-top: 0.5vw;
 `;
 
 const Practice = styled(Text).attrs(() => ({

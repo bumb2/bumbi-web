@@ -29,6 +29,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vw;
 `;
 
 const ImageContainer = styled.div`

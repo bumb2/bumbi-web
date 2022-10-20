@@ -15,7 +15,10 @@ const Activity = () => {
         <Box>
           <LeftContainer>
             <Text size="2vw" color="purple">
-              KU 이노베이션 해커톤
+              KU 이노베이션
+            </Text>
+            <Text size="2vw" color="purple">
+              해커톤
             </Text>
             <Date>2021.01 ~ 2021.02</Date>
           </LeftContainer>
@@ -30,7 +33,16 @@ const Activity = () => {
         <Box>
           <LeftContainer>
             <Text size="2vw" color="purple">
-              Samsung Open Source Companions
+              Samsung
+            </Text>
+            <Text size="2vw" color="purple">
+              Open
+            </Text>
+            <Text size="2vw" color="purple">
+              Source
+            </Text>
+            <Text size="2vw" color="purple">
+              Companions
             </Text>
             <Date>2021.06 ~ 2022.12</Date>
           </LeftContainer>
@@ -53,6 +65,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vw;
 `;
 
 const LeftContainer = styled.div`
@@ -75,6 +88,7 @@ const Date = styled(Text).attrs(() => ({
   size: '1vw',
   color: 'gray',
 }))`
+  margin-top: 0.5vw;
   margin-bottom: 4vw;
 `;
 
