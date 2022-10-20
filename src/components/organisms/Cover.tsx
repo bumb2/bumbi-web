@@ -44,7 +44,7 @@ const TitleContainer = styled(Box)`
 `;
 
 const Title = styled(Text).attrs(() => ({
-  size: '1.2vw',
+  size: '7vw',
   font: `${Fonts.SUIT_Bold}`,
   color: 'white',
 }))`
