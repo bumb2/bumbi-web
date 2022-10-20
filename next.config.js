@@ -6,6 +6,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
+  fileExtensions: ['jpg', 'jpeg', 'png', 'gif'],
   module: {
     rules: [
       {

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import Fonts from '@commons/Fonts';
 
@@ -13,7 +12,7 @@ const Skills = () => {
       <BoxContainer column>
         <Title>👏 Skills</Title>
         <ImageContainer>
-          <Image unoptimized={true} src={Images.SKILLS} />
+          <img src="/static/Images/skills.png" width="100%" />
         </ImageContainer>
       </BoxContainer>
     </Wrapper>

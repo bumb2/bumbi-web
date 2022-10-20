@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image';
-
-import Images from '@commons/Images';
 import Theme from '@commons/Theme';
 import Fonts from '@commons/Fonts';
 
@@ -12,7 +9,7 @@ const About = () => {
   return (
     <Wrapper>
       <Container>
-        <Image src={Images.BUMBI_INSPIRED} alt="bumbi" quality={100} layout="responsive" objectFit="contain" />
+        <img src="/static/Images/bumbi-inspired.png" alt="bumbi" />
       </Container>
       <Box height="1vw" />
       <Title>About me</Title>

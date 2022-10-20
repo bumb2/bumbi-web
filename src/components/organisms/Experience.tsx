@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
-import Images from '@commons/Images';
 import Fonts from '@commons/Fonts';
 
 import Text from '@components/atoms/Text';
@@ -21,7 +19,7 @@ const Experience = () => {
             <ProjectName>MeetPet Partners 서비스 개발</ProjectName>
             <Date>2021.09 ~ 현재</Date>
             <ProjectImage>
-              <Image unoptimized={true} src={Images.MEETPET_PARTNERS} />
+              <img src="/static/Images/meetpet-partners.png" width="100%" />
             </ProjectImage>
             <Content>
               강아지의 정보를 관리하고 수의사에게 받은 검진서를 확인할 수 있는 펫샵 사장님 전용 애플리케이션을 개발하였습니다. 약 2개월 간 초기 버전의
