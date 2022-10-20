@@ -8,52 +8,38 @@ import Box from '@components/atoms/Box';
 const Activity = () => {
   return (
     <Wrapper>
-      <Box width="60%" column>
-        <Text size="2.5vw" color="purple" font={Fonts.SUIT_Heavy}>
-          🤘 Activity
-        </Text>
+      <BoxContainer column>
+        <Title>🤘 Activity</Title>
         <Box>
           <LeftContainer>
-            <Text size="2vw" color="purple">
-              KU 이노베이션
-            </Text>
-            <Text size="2vw" color="purple">
-              해커톤
-            </Text>
+            <ExperienceText>KU 이노베이션</ExperienceText>
+            <ExperienceText>해커톤</ExperienceText>
             <Date>2021.01 ~ 2021.02</Date>
           </LeftContainer>
           <RightContainer>
             <Content>
-              건국대학교 창업지원단과 중국 칭화대학 기술지주회사가 공동 주최한 ‘KU 이노베이션 해커톤’에서 반려동물을 주제로 앱을 개발하였습니다. 반려동물의
-              행동과 감정을 분석하여 양육 환경을 진단해주는 앱을 통해 대상을 수상했습니다. frontend 앱 개발 및 발표 등을 맡아 팀을 리딩하였습니다.
+              &nbsp;건국대학교 창업지원단과 중국 칭화대학 기술지주회사가 공동 주최한 ‘KU 이노베이션 해커톤’에서 반려동물을 주제로 앱을 개발하였습니다.
+              반려동물의 행동과 감정을 분석하여 양육 환경을 진단해주는 앱을 통해 대상을 수상했습니다. frontend 앱 개발 및 발표 등을 맡아 팀을 리딩하였습니다.
             </Content>
           </RightContainer>
         </Box>
         <Line />
         <Box>
           <LeftContainer>
-            <Text size="2vw" color="purple">
-              Samsung
-            </Text>
-            <Text size="2vw" color="purple">
-              Open
-            </Text>
-            <Text size="2vw" color="purple">
-              Source
-            </Text>
-            <Text size="2vw" color="purple">
-              Companions
-            </Text>
+            <ExperienceText>Samsung</ExperienceText>
+            <ExperienceText>Open</ExperienceText>
+            <ExperienceText>Source</ExperienceText>
+            <ExperienceText>Companions</ExperienceText>
             <Date>2021.06 ~ 2022.12</Date>
           </LeftContainer>
           <RightContainer>
             <Content>
-              samsung sorfware와 open source를 중심으로 software Influencer 활동을 하였습니다. SSDC 2021 에서 “Samsung Open source Companions, Connect the
+              &nbsp;samsung sorfware와 open source를 중심으로 software Influencer 활동을 하였습니다. SSDC 2021 에서 “Samsung Open source Companions, Connect the
               world!”라는 주제로 세션 발표를 진행하였습니다. Open Source의 사용과 copyright, contribution에 대해 고민해볼 수 있는 기회였습니다.
             </Content>
           </RightContainer>
         </Box>
-      </Box>
+      </BoxContainer>
     </Wrapper>
   );
 };
@@ -66,11 +52,44 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 10vw;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30vw;
+  }
+`;
+
+const BoxContainer = styled(Box).attrs(() => ({
+  width: '60%',
+}))`
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
+const Title = styled(Text).attrs(() => ({
+  size: '2.5vw',
+  color: 'purple',
+  font: `${Fonts.SUIT_Heavy}`,
+}))`
+  @media (max-width: 768px) {
+    font-size: 7.5vw;
+    margin-bottom: 5vw;
+  }
+`;
+
+const ExperienceText = styled(Text).attrs(() => ({
+  size: '2vw',
+  color: 'purple',
+}))`
+  @media (max-width: 768px) {
+    font-size: 5vw;
+    word-break: break-all;
+  }
 `;
 
 const LeftContainer = styled.div`
-  width: 24%;
-  padding: 4vw 6% 0 0;
+  width: 26%;
+  padding: 4vw 4% 0 0;
 `;
 
 const RightContainer = styled.div`
@@ -80,8 +99,15 @@ const RightContainer = styled.div`
 
 const Content = styled(Text).attrs(() => ({
   size: '1.2vw',
+  font: `${Fonts.SUIT_Regular}`,
 }))`
   line-height: 2vw;
+  word-break: break-all;
+
+  @media (max-width: 768px) {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
 `;
 
 const Date = styled(Text).attrs(() => ({
@@ -90,6 +116,11 @@ const Date = styled(Text).attrs(() => ({
 }))`
   margin-top: 0.5vw;
   margin-bottom: 4vw;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+    font-family: SUIT-Medium;
+  }
 `;
 
 const Line = styled.div`
@@ -97,6 +128,10 @@ const Line = styled.div`
   width: 100%;
   background-color: #cfcfcf;
   margin: 2vw 0;
+
+  @media (max-width: 768px) {
+    margin: 16vw 0;
+  }
 `;
 
 export default Activity;

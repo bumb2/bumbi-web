@@ -60,6 +60,10 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 10vw;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30vw;
+  }
 `;
 
 const BoxContainer = styled(Box).attrs(() => ({
@@ -77,6 +81,7 @@ const Company = styled(Text).attrs(() => ({
     font-size: 6vw;
   }
 `;
+
 const Title = styled(Text).attrs(() => ({
   size: '2.5vw',
   color: 'purple',
