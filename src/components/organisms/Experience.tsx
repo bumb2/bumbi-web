@@ -10,13 +10,11 @@ import Box from '@components/atoms/Box';
 const Experience = () => {
   return (
     <Wrapper>
-      <Box width="60%" column>
-        <Text size="2.5vw" color="purple" font={Fonts.SUIT_Heavy}>
-          👊 Work Experience
-        </Text>
+      <BoxContainer column>
+        <Title>👊 Work Experience</Title>
         <Box>
           <LeftContainer>
-            <Text size="2vw">파이리코</Text>
+            <Company>파이리코</Company>
             <Date>2020.10 ~ 현재</Date>
           </LeftContainer>
           <RightContainer>
@@ -49,7 +47,7 @@ const Experience = () => {
             <Content>TypeScript, Next.js, styled-components, mobx</Content>
           </RightContainer>
         </Box>
-      </Box>
+      </BoxContainer>
     </Wrapper>
   );
 };
@@ -62,6 +60,32 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 10vw;
+`;
+
+const BoxContainer = styled(Box).attrs(() => ({
+  width: '60%',
+}))`
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
+const Company = styled(Text).attrs(() => ({
+  size: '2vw',
+}))`
+  @media (max-width: 768px) {
+    font-size: 6vw;
+  }
+`;
+const Title = styled(Text).attrs(() => ({
+  size: '2.5vw',
+  color: 'purple',
+  font: `${Fonts.SUIT_Heavy}`,
+}))`
+  @media (max-width: 768px) {
+    font-size: 7.5vw;
+    margin-bottom: 5vw;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -78,13 +102,24 @@ const Content = styled(Text).attrs(() => ({
   size: '1.2vw',
 }))`
   line-height: 2vw;
+
+  @media (max-width: 768px) {
+    font-size: 4vw;
+    line-height: 6vw;
+    font-family: SUIT-Regular;
+  }
 `;
 
 const ProjectName = styled(Text).attrs(() => ({
   size: '2vw',
   color: 'purple',
   font: `${Fonts.SUIT_SemiBold}`,
-}))``;
+}))`
+  @media (max-width: 768px) {
+    font-size: 6vw;
+    font-family: SUIT-Bold;
+  }
+`;
 
 const Date = styled(Text).attrs(() => ({
   size: '1vw',
@@ -92,6 +127,11 @@ const Date = styled(Text).attrs(() => ({
 }))`
   margin-bottom: 4vw;
   margin-top: 0.5vw;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+    font-family: SUIT-Medium;
+  }
 `;
 
 const Practice = styled(Text).attrs(() => ({
@@ -100,6 +140,11 @@ const Practice = styled(Text).attrs(() => ({
 }))`
   margin-top: 3vw;
   margin-bottom: 1vw;
+
+  @media (max-width: 768px) {
+    font-size: 5vw;
+    margin-top: 8vw;
+  }
 `;
 
 const Line = styled.div`
@@ -107,10 +152,14 @@ const Line = styled.div`
   width: 100%;
   background-color: #cfcfcf;
   margin: 8vw 0;
+
+  @media (max-width: 768px) {
+    margin: 16vw 0;
+  }
 `;
 
 const ProjectImage = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 3vw;
 `;
 
 export default Experience;
