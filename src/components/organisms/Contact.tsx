@@ -161,6 +161,9 @@ const Link = styled.a`
 `;
 
 const ContactContainer = styled(Box)`
+  display: flex;
+  align-items: center;
+
   &: nth-child(1) {
     margin-bottom: 2vw;
 
