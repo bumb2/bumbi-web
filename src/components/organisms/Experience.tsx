@@ -7,7 +7,7 @@ import Fonts from '@commons/Fonts';
 import Text from '@components/atoms/Text';
 import Box from '@components/atoms/Box';
 
-const Cover = () => {
+const Experience = () => {
   return (
     <Wrapper>
       <Box width="60%" column>
@@ -111,4 +111,4 @@ const ProjectImage = styled.div`
   margin-bottom: 50px;
 `;
 
-export default Cover;
+export default Experience;

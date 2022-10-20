@@ -8,7 +8,7 @@ import Fonts from '@commons/Fonts';
 import Text from '@components/atoms/Text';
 import Box from '@components/atoms/Box';
 
-const Cover = () => {
+const About = () => {
   return (
     <Wrapper>
       <Container>
@@ -67,4 +67,4 @@ const Content = styled(Text).attrs(() => ({
   align-items: center;
 `;
 
-export default Cover;
+export default About;
