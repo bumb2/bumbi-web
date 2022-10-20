@@ -6,7 +6,7 @@ import Fonts from '@commons/Fonts';
 import Text from '@components/atoms/Text';
 import Box from '@components/atoms/Box';
 
-const Experience = () => {
+const Contact = () => {
   return (
     <Wrapper>
       <Box width="60%" column>
@@ -94,4 +94,4 @@ const ContactContainer = styled(Box)`
   }
 `;
 
-export default Experience;
+export default Contact;
