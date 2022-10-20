@@ -36,7 +36,7 @@ const TitleContainer = styled(Box)`
   margin-left: 4vw;
 
   @media (max-width: 768px) {
-    margin: 0;
+    margin: -20vw 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
