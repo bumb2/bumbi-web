@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['bumbi.dev'],
+    domains: ['localhost', '*'],
   },
   reactStrictMode: true,
   swcMinify: true,
