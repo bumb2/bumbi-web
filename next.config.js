@@ -1,5 +1,4 @@
-/** @type {import('next').NextConfig} */
-import withImages from 'next/images';
+const withImages = require('next-images');
 
 const nextConfig = {
   images: {
