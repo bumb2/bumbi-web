@@ -107,6 +107,7 @@ const Content = styled(Text).attrs(() => ({
   size: '1.2vw',
 }))`
   line-height: 2vw;
+  font-family: SUIT-Regular;
 
   @media (max-width: 768px) {
     font-size: 4vw;

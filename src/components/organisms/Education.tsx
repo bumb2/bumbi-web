@@ -8,18 +8,12 @@ import Box from '@components/atoms/Box';
 const Education = () => {
   return (
     <Wrapper>
-      <Box width="60%" column>
-        <Text size="2.5vw" color="purple" font={Fonts.SUIT_Heavy}>
-          🙌 Education
-        </Text>
+      <BoxContainer column>
+        <Title>🙌 Education</Title>
         <Box>
           <LeftContainer>
-            <Text size="2vw" color="purple">
-              건국대학교
-            </Text>
-            <Text size="2vw" color="purple">
-              사학과 재학중
-            </Text>
+            <ExperienceText>건국대학교</ExperienceText>
+            <ExperienceText>사학과 재학중</ExperienceText>
             <Date>2018.03 ~ 현재</Date>
           </LeftContainer>
           <RightContainer>
@@ -33,7 +27,7 @@ const Education = () => {
             </Content>
           </RightContainer>
         </Box>
-      </Box>
+      </BoxContainer>
     </Wrapper>
   );
 };
@@ -46,6 +40,39 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 10vw;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50vw;
+  }
+`;
+
+const BoxContainer = styled(Box).attrs(() => ({
+  width: '60%',
+}))`
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
+const Title = styled(Text).attrs(() => ({
+  size: '2.5vw',
+  color: 'purple',
+  font: `${Fonts.SUIT_Heavy}`,
+}))`
+  @media (max-width: 768px) {
+    font-size: 7.5vw;
+    margin-bottom: 5vw;
+  }
+`;
+
+const ExperienceText = styled(Text).attrs(() => ({
+  size: '2vw',
+  color: 'purple',
+}))`
+  @media (max-width: 768px) {
+    font-size: 4.5vw;
+    word-break: break-all;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -63,6 +90,12 @@ const Content = styled(Text).attrs(() => ({
 }))`
   line-height: 2vw;
   margin-bottom: 2vw;
+  font-family: SUIT-Regular;
+
+  @media (max-width: 768px) {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
 `;
 
 const Date = styled(Text).attrs(() => ({
@@ -71,6 +104,11 @@ const Date = styled(Text).attrs(() => ({
 }))`
   margin-top: 0.5vw;
   margin-bottom: 4vw;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+    font-family: SUIT-Medium;
+  }
 `;
 
 export default Education;

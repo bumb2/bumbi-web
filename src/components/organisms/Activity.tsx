@@ -18,8 +18,8 @@ const Activity = () => {
           </LeftContainer>
           <RightContainer>
             <Content>
-              &nbsp;건국대학교 창업지원단과 중국 칭화대학 기술지주회사가 공동 주최한 ‘KU 이노베이션 해커톤’에서 반려동물을 주제로 앱을 개발하였습니다.
-              반려동물의 행동과 감정을 분석하여 양육 환경을 진단해주는 앱을 통해 대상을 수상했습니다. frontend 앱 개발 및 발표 등을 맡아 팀을 리딩하였습니다.
+              건국대학교 창업지원단과 중국 칭화대학 기술지주회사가 공동 주최한 ‘KU 이노베이션 해커톤’에서 반려동물을 주제로 앱을 개발하였습니다. 반려동물의
+              행동과 감정을 분석하여 양육 환경을 진단해주는 앱을 통해 대상을 수상했습니다. frontend 앱 개발 및 발표 등을 맡아 팀을 리딩하였습니다.
             </Content>
           </RightContainer>
         </Box>
@@ -34,7 +34,7 @@ const Activity = () => {
           </LeftContainer>
           <RightContainer>
             <Content>
-              &nbsp;samsung sorfware와 open source를 중심으로 software Influencer 활동을 하였습니다. SSDC 2021 에서 “Samsung Open source Companions, Connect the
+              samsung sorfware와 open source를 중심으로 software Influencer 활동을 하였습니다. SSDC 2021 에서 “Samsung Open source Companions, Connect the
               world!”라는 주제로 세션 발표를 진행하였습니다. Open Source의 사용과 copyright, contribution에 대해 고민해볼 수 있는 기회였습니다.
             </Content>
           </RightContainer>
@@ -82,7 +82,7 @@ const ExperienceText = styled(Text).attrs(() => ({
   color: 'purple',
 }))`
   @media (max-width: 768px) {
-    font-size: 5vw;
+    font-size: 4.5vw;
     word-break: break-all;
   }
 `;
