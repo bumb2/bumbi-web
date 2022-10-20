@@ -9,14 +9,10 @@ import Box from '@components/atoms/Box';
 const Cover = () => {
   return (
     <Wrapper>
-      <Title column>
-        <Text size="6.5vw" font={Fonts.SUIT_Bold} color="white">
-          안녕하세요,
-        </Text>
-        <Text size="6.5vw" font={Fonts.SUIT_Bold} color="white">
-          개발자 현은비입니다
-        </Text>
-      </Title>
+      <TitleContainer column>
+        <Title>안녕하세요,</Title>
+        <Title>개발자 현은비입니다</Title>
+      </TitleContainer>
     </Wrapper>
   );
 };
@@ -26,12 +22,36 @@ const Wrapper = styled.div`
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
-const Title = styled(Box)`
+const TitleContainer = styled(Box)`
   position: relative;
   margin-top: 60vh;
   margin-left: 4vw;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+const Title = styled(Text).attrs(() => ({
+  size: '1.2vw',
+  font: `${Fonts.SUIT_Bold}`,
+  color: 'white',
+}))`
+  @media (max-width: 768px) {
+    font-size: 10vw;
+    line-height: 140%;
+  }
 `;
 
 export default Cover;
