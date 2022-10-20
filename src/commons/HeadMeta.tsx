@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Images from '@commons/Images';
 
 const HeadMeta = ({
-  title = `은비's History`,
+  title = `은비 Resume`,
   description = '안녕하세요, 개발자 현은비입니다!',
   keyword = '이력서, 개발자, 개발, 코딩, 성장, 경험, developer, engineering',
   thumbnail = Images.THUMBNAIL,
@@ -27,7 +27,7 @@ const HeadMeta = ({
 
       <meta property="og:locale" content="ko_KR" />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="은비's History" />
+      <meta property="og:site_name" content="은비 Resume" />
 
       <link rel="canonical" href="https://bumbi.dev" />
 
