@@ -339,6 +339,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@reacticons/ionicons@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@reacticons/ionicons/-/ionicons-6.0.4.tgz#3871c813d41c6faf473b9465e844d316fcf75b54"
+  integrity sha512-FN4/D6a/kS2dEMwVltAGCKiYArDESGW1fgsV2bgz2ZHFAlmBF7o2p7Ckr+clOHzIEg1odWm+gdc+DBtYc80ENQ==
+
 "@rushstack/eslint-patch@^1.1.3":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.4.tgz#0c8b74c50f29ee44f423f7416829c0bf8bb5eb27"
