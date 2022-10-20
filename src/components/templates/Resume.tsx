@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Cover from '@components/organisms/Cover';
 import About from '@components/organisms/About';
 import Experience from '@components/organisms/Experience';
+import Activity from '@components/organisms/Activity';
+import Skill from '@components/organisms/Skill';
 
 const Resume = () => {
   return (
@@ -10,6 +12,8 @@ const Resume = () => {
       <Cover />
       <About />
       <Experience />
+      <Activity />
+      <Skill />
     </Wrapper>
   );
 };
