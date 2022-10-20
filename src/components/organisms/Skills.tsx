@@ -13,7 +13,7 @@ const Skills = () => {
       <BoxContainer column>
         <Title>👏 Skills</Title>
         <ImageContainer>
-          <Image src={Images.SKILLS} />
+          <Image unoptimized={true} src={Images.SKILLS} />
         </ImageContainer>
       </BoxContainer>
     </Wrapper>
