@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-import withImages from 'nest/images';
+import withImages from 'next/images';
 
 const nextConfig = {
   images: {
