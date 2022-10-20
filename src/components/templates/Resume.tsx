@@ -4,7 +4,7 @@ import Cover from '@components/organisms/Cover';
 import About from '@components/organisms/About';
 import Experience from '@components/organisms/Experience';
 import Activity from '@components/organisms/Activity';
-import Skill from '@components/organisms/Skill';
+import Skills from '@components/organisms/Skills';
 
 const Resume = () => {
   return (
@@ -13,7 +13,7 @@ const Resume = () => {
       <About />
       <Experience />
       <Activity />
-      <Skill />
+      <Skills />
     </Wrapper>
   );
 };

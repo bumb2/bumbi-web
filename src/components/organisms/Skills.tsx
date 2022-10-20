@@ -7,12 +7,12 @@ import Text from '@components/atoms/Text';
 import Box from '@components/atoms/Box';
 import Images from '@commons/Images';
 
-const Skill = () => {
+const Skills = () => {
   return (
     <Wrapper>
       <Box width="60%" column>
         <Text size="2.5vw" color="purple" font={Fonts.SUIT_Heavy}>
-          👏 Skill
+          👏 Skills
         </Text>
         <ImageContainer>
           <Image src={Images.SKILLS} />
@@ -36,4 +36,4 @@ const ImageContainer = styled.div`
   width: 50vw;
 `;
 
-export default Skill;
+export default Skills;
