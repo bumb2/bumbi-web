@@ -62,7 +62,7 @@ const Wrapper = styled.div`
   margin-bottom: 10vw;
 
   @media (max-width: 768px) {
-    margin-bottom: 30vw;
+    margin-bottom: 50vw;
   }
 `;
 

@@ -10,14 +10,12 @@ import Images from '@commons/Images';
 const Skills = () => {
   return (
     <Wrapper>
-      <Box width="60%" column>
-        <Text size="2.5vw" color="purple" font={Fonts.SUIT_Heavy}>
-          👏 Skills
-        </Text>
+      <BoxContainer column>
+        <Title>👏 Skills</Title>
         <ImageContainer>
           <Image src={Images.SKILLS} />
         </ImageContainer>
-      </Box>
+      </BoxContainer>
     </Wrapper>
   );
 };
@@ -30,11 +28,38 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 10vw;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50vw;
+  }
+`;
+
+const BoxContainer = styled(Box).attrs(() => ({
+  width: '60%',
+}))`
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
+const Title = styled(Text).attrs(() => ({
+  size: '2.5vw',
+  color: 'purple',
+  font: `${Fonts.SUIT_Heavy}`,
+}))`
+  @media (max-width: 768px) {
+    font-size: 7.5vw;
+    margin-bottom: 5vw;
+  }
 `;
 
 const ImageContainer = styled.div`
   margin: 4vw 0;
   width: 50vw;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default Skills;
