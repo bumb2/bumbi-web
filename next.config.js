@@ -1,10 +1,27 @@
 /** @type {import('next').NextConfig} */
+import withImages from 'nest/images';
+
 const nextConfig = {
   images: {
-    domains: ['localhost', '*'],
+    domains: ['localhost', 'bumbi.dev'],
   },
   reactStrictMode: true,
   swcMinify: true,
+  module: {
+    rules: [
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[hash]-[name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
+  },
 };
 
-module.exports = nextConfig;
+module.exports = withImages(nextConfig);

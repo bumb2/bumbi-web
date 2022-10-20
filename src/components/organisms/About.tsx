@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Wrapper>
       <Container>
-        <Image src={Images.BUMBI_INSPIRED} unoptimized={true} alt="bumbi" quality={100} layout="responsive" objectFit="contain" />
+        <Image src={Images.BUMBI_INSPIRED} alt="bumbi" quality={100} layout="responsive" objectFit="contain" />
       </Container>
       <Box height="1vw" />
       <Title>About me</Title>
