@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
+import Images from '@commons/Images';
 import Fonts from '@commons/Fonts';
 
 import Text from '@components/atoms/Text';
@@ -20,6 +22,9 @@ const Cover = () => {
           <RightContainer>
             <ProjectName>MeetPet Partners 서비스 개발</ProjectName>
             <Date>2021.09 ~ 현재</Date>
+            <ProjectImage>
+              <Image src={Images.MEETPET_PARTNERS} />
+            </ProjectImage>
             <Content>
               강아지의 정보를 관리하고 수의사에게 받은 검진서를 확인할 수 있는 펫샵 사장님 전용 애플리케이션을 개발하였습니다. 약 2개월 간 초기 버전의
               프론트엔드와 백엔드 대부분을 개발했습니다. 2022년부터 서비스를 시작하였고, 유지 및 보수 진행 중입니다.
@@ -77,6 +82,7 @@ const Content = styled(Text).attrs(() => ({
 const ProjectName = styled(Text).attrs(() => ({
   size: '2vw',
   color: 'purple',
+  font: `${Fonts.SUIT_SemiBold}`,
 }))``;
 
 const Date = styled(Text).attrs(() => ({
@@ -99,6 +105,10 @@ const Line = styled.div`
   width: 100%;
   background-color: #cfcfcf;
   margin: 8vw 0;
+`;
+
+const ProjectImage = styled.div`
+  margin-bottom: 50px;
 `;
 
 export default Cover;

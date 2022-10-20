@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { ifProp } from 'styled-tools';
 
-import Theme from '@commons/Theme';
-
 import Fonts from '@commons/Fonts';
 
 interface TextProps {

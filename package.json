@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.28",
     "@types/styled-components": "^5.1.26",
     "next": "12.2.3",
     "react": "18.2.0",
