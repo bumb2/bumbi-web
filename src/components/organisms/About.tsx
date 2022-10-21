@@ -8,7 +8,7 @@ import Box from '@components/atoms/Box';
 const About = () => {
   return (
     <Wrapper>
-        <Image src="/static/Images/bumbi-inspired.png" alt="bumbi" />
+      <Image src="/static/Images/bumbi-inspired.png" alt="bumbi" />
       <Box height="1vw" />
       <Title>About me</Title>
       <Box height="4vw" />
