@@ -8,9 +8,7 @@ import Box from '@components/atoms/Box';
 const About = () => {
   return (
     <Wrapper>
-      <Container>
-        <img src="/static/Images/bumbi-inspired.png" alt="bumbi" />
-      </Container>
+        <Image src="/static/Images/bumbi-inspired.png" alt="bumbi" />
       <Box height="1vw" />
       <Title>About me</Title>
       <Box height="4vw" />
@@ -45,8 +43,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const Container = styled.span`
-  width: 14vw;
+const Image = styled.img`
+  width: 20vw;
+  margin-bottom: 1vw;
 
   @media (max-width: 768px) {
     width: 36vw;

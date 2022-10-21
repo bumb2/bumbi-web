@@ -3,6 +3,7 @@ const withImages = require('next-images');
 const nextConfig = {
   images: {
     domains: ['localhost', 'bumbi.dev'],
+    disableStaticImages: true,
   },
   reactStrictMode: true,
   swcMinify: true,

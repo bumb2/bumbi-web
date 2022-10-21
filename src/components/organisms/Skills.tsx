@@ -4,7 +4,6 @@ import Fonts from '@commons/Fonts';
 
 import Text from '@components/atoms/Text';
 import Box from '@components/atoms/Box';
-import Images from '@commons/Images';
 
 const Skills = () => {
   return (

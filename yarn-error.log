@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.11/libexec/bin/yarn.js add @types/next-images
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.11/libexec/bin/yarn.js add no-var-require
 
 PATH: 
   /Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/silverbi/opt/anaconda3/bin:/Users/silverbi/opt/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.9/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fnext-images: Not found
+  Error: https://registry.yarnpkg.com/no-var-require: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.11/libexec/lib/cli.js:66992:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.22.11/libexec/lib/cli.js:140763:22)
       at Request.emit (node:events:390:28)
